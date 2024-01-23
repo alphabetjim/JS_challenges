@@ -1,0 +1,1 @@
+This repository contains code to implement the solutions to the exercises at [w3resource](https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php).
