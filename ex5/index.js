@@ -1,4 +1,5 @@
-function insert_Row() {
+// initial attempt
+function insert_Row_alternative() {
     let table = sampleTable;
     let nrowsPresent = table.rows.length;
     let row = document.createElement('tr');
@@ -9,4 +10,14 @@ function insert_Row() {
         row.appendChild(cell);
     }
     table.children[0].appendChild(row);
+}
+
+// solution provided, but with my improvements
+function insert_Row() {
+    let nRows = sampleTable.rows.length;
+    let x = sampleTable.insertRow(nRows);
+    let y = x.insertCell(0);
+    let z = x.insertCell(1);
+    y.innerHTML = `Row${nRows+1}, Cell1`;
+    z.innerHTML = `Row${nRows+1}, Cell2`;
 }
