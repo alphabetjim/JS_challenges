@@ -13,5 +13,12 @@ function showImage() {
     imgInPage.src = imageSourceInfo[randInt].source;
     imgInPage.height = imageSourceInfo[randInt].height;
     imgInPage.width = imageSourceInfo[randInt].width;
+    // Clear any existing images
+    if (imageDiv.children.length>0) {
+        for (let child of imageDiv.children) {
+            imageDiv.removeChild(child);
+        }
+    }
+    // Display image
     imageDiv.appendChild(imgInPage);
 }
