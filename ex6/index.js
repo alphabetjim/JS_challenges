@@ -7,5 +7,4 @@ function changeContent() {
     let theRow = myTable.rows[row-1];
     let theCell = theRow.children[column-1];
     theCell.innerHTML = cellString;
-    alert(theCell.innerHTML);
 }
