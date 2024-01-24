@@ -1,8 +1,8 @@
 function getOptions() {
     let listItems = `The selector contains: `;
-    for (let i=0; i<mySelect.children.length; i++) {
+    for (let i=0; i<mySelect.length; i++) {
         listItems += `
-        ${i} - ${mySelect.children[i].innerHTML}`;
+        ${i} - ${mySelect.options[i].text}`;
     }
     listItems += `
     ${mySelect.children.length} in total.`
